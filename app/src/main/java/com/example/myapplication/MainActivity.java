@@ -1,3 +1,4 @@
+package com.example.myapplication;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intent = new Intent(this, AlarmReceiver.class);
 
-            pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
+            pendingIntent = PendingIntent.getBroadcast(this, 0, intent,0);
 
             time = (calendar.getTimeInMillis() - (calendar.getTimeInMillis() % 60000));
             if (System.currentTimeMillis() > time) {
