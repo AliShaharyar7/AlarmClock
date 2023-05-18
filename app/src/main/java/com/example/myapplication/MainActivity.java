@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void OnToggleClicked(View view) {
         long time;
         if (((ToggleButton) view).isChecked()) {
-            Toast.makeText(MainActivity.this, "ALARM ON", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "ALARM ON", Toast.LENGTH_SHORT).show(); //Displays that alarm is on.
             Calendar calendar = Calendar.getInstance();
 
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             alarmManager.cancel(pendingIntent);
-            Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show(); //Displays that alarm is off.
         }
     }
 }
